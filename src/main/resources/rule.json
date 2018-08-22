@@ -23,6 +23,16 @@
         "value": "LOW"
       }
     ]
+  },
+  {
+    "signal": "ATL10",
+    "rule": [
+      {
+        "type": "Integer",
+        "operator": "=",
+        "value": "46.691"
+      }
+    ]
   }
 ]
 

@@ -60,8 +60,8 @@ public class Util {
     }
 
     public static boolean checkInteger(SignalData signalData, Rule rule) {
-        Double data = (double) signalData.getValue();
-        Double dataFromRule = (double) rule.getValue();
+        double data = (double) signalData.getValue();
+        double dataFromRule = (double) rule.getValue();
         switch (rule.getOperator()) {
             case EQUAL: {
                 return data == dataFromRule ? true : false;
