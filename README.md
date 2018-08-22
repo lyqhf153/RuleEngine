@@ -24,8 +24,8 @@ and shown in output.
 - Output will so distinct result.
 - Operatore support as per data types
     - STRING :  Equal
-		- INTEGER : Equal , Greater , Lesser
-		- DATETIME : Equal , Greater , Lesser
+    - INTEGER : Equal , Greater Than , Less Than
+    - DATETIME : Equal , Greater Than , Lesser Than
 
 
 ## Build the project 
