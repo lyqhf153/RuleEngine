@@ -8,6 +8,10 @@ are violating the rules.
 Created the project in considering if we need to add more filters
 or operators we can be able to do in less time and minimal changes.
 
+## Pre-requisite
+- Java 8
+- Maven
+
 **Listed below the Classes which will be required to be changed if enhancement need to be made**
 - DataType.java  : ***Add new data types***
 - Operator.java : ***Add new operators***
