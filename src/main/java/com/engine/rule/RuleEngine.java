@@ -17,8 +17,8 @@ import java.util.Set;
 public class RuleEngine {
 
     public static void main(String[] args) throws IOException {
-        String inputPath = "/Users/manoj/Desktop/manoj/workplace/workspace/sparkflow/RuleEngine/src/main/resources/raw_data.json"; //args[0];
-        String rulePath = "/Users/manoj/Desktop/manoj/workplace/workspace/sparkflow/RuleEngine/src/main/resources/rule.json";//args[1];
+        String inputPath = args[0];
+        String rulePath = args[1];
         List<SignalData> signalDatum = Util.readJsonStream(SignalData.class, new FileInputStream(new File(inputPath)));
         Map<String, List<Rule>> signalRuleMap =  Util.getSignalRuleMap(rulePath);
         Set<String> invalidDatum = Util.getInvalidData(signalDatum, signalRuleMap);
