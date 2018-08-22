@@ -27,6 +27,11 @@ and shown in output.
 		- INTEGER : Equal , Greater , Lesser
 		- DATETIME : Equal , Greater , Lesser
 
+
+## Build the project 
+<code>  mvn clean install </code>
+Fat jar **RuleEngine-jar-with-dependencies.jar**  will be created in target folder 
+
 ## Generate Rule file
 Here Json should be the list of rules where each signal can have multiple rules.
 Say for ATL1 we have rules as below
@@ -80,18 +85,14 @@ so the Json will be
 ```
 **Sample rule.json is present in main/resources folder for reference**
 
-## Build the project 
-<code>  mvn clean install </code>
-Fat jar **RuleEngine-jar-with-dependencies.jar**  will be created in target folder 
-
 ## Run the code
 Go to target folder , run below command
 Program takes two argument
 - Signal Input Json File
-- Rule Json File
+- Rule Json File (**Create the rule.json as per "Generate Rule file" section"**
 
 Syntax
-<code>  java -jar RuleEngine-jar-with-dependencies.jar <Signal Input Json File> <Rule Json File> </code>
+<code>  java -jar RuleEngine-jar-with-dependencies.jar (**Signal Input Json File**)  (**Rule Json File**) </code>
 	
 Example
 <code> java -jar RuleEngine-jar-with-dependencies.jar /tmp/raw_data.json  /tmp/rule.json </code>
