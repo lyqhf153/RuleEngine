@@ -98,7 +98,11 @@ Example
 <code> java -jar RuleEngine-jar-with-dependencies.jar /tmp/raw_data.json  /tmp/rule.json </code>
 
 **Output will printed in console**
-
+```javascript 
+ATL10
+ATL1
+ATL2
+```
 
 ## Improvement can be done
 -  more data type can be included
